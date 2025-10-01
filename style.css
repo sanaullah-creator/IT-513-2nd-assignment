@@ -1,0 +1,173 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+ }
+
+ body {
+   font-family: Arial, sans-serif;
+   background-color: whitesmoke;
+   padding-top: 130px;
+ }
+
+ header {
+   background: skyblue;
+   height: 130px;
+   color: white;
+   margin: 0;
+   width: 100%;
+   position: fixed;
+   /* keep header fixed */
+   top: 0;
+   /* stick to the top */
+   left: 0;
+   /* align from left */
+   z-index: 1000;
+   /* keep above all other elements */
+ }
+
+
+
+
+
+
+ /* Heading / Logo */
+ header h1 {
+   font-size: 24px;
+   letter-spacing: 1px;
+   text-align: center;
+   color: black;
+   font-size: 2rem;
+   font-weight: 900;
+
+
+ }
+
+ /* Navbar styles */
+ nav ul {
+   list-style: none;
+   display: flex;
+   justify-content: space-evenly;
+   padding-top: 20px;
+   
+ }
+
+ nav ul li {
+   display: inline;
+ }
+
+ nav ul li a {
+   text-decoration: none;
+   color: white;
+   font-size: 16px;
+   padding: 8px 12px;
+   border-radius: 20px;
+   transition: background 0.3s ease;
+ }
+
+ nav ul li a:hover {
+   background: #8aa5a0;
+   /* teal hover */
+   border: 2px solid black;
+   border-radius: 20px;
+ }
+ 
+ }
+
+ .first h2 {
+   text-align: center;
+   font-weight: 700;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   padding-left: 50px;
+ }
+ .second {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: -5px 0px 10px rgba(190, 239, 11, 0.881); /* left shadow only */
+}
+}
+
+ .second h3 {
+   font-style: italic;
+   padding-left: 20px;
+
+ }
+
+ .second p {
+   padding-left: 40px;
+   color: black;
+ }
+ .third {
+   background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: -5px 0px 10px rgba(197, 28, 28, 0.856); /* left shadow only */
+}
+}
+
+ .third h3 {
+   padding: 20px;
+   font-style: italic;
+ }
+
+ .third ul li {
+   list-style-type: circle;
+   margin-left: 70px;
+   padding: 5px;
+   color: black;
+ }
+ .fourth {
+   background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: -5px 0px 10px rgba(159, 6, 54, 0.792); /* left shadow only */
+}
+}
+
+ .fourth h3 {
+   padding: 20px;
+   font-style: italic;
+
+ }
+
+ .fourth ol {
+   margin-left: 70px;
+   color: black;
+   padding-bottom: 20px;
+
+ }
+
+ .fourth ol li {
+   padding: 5px;
+ }
+
+ footer {
+   background-color: black;
+   color: white;
+   text-align: center;
+   height: 180px;
+   width: 100%;
+ }
+
+ .football a {
+   margin-bottom: 20px;
+ }
+
+ .football a:hover {
+   background: chocolate;
+
+ }
+
+ #ten {
+   padding: 20px;
+ }
+
+ #nine {
+   padding-bottom: 20px;
+ }
