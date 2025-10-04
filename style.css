@@ -171,3 +171,166 @@
  #nine {
    padding-bottom: 20px;
  }
+ .hero h2 {
+  text-align: center;
+  border: 2px solid black;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 400px;
+  border-radius: 5px;
+  background-color: rgb(57, 188, 57);
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Form container */
+.formset {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: -5px 0px 10px rgba(118, 69, 85, 0.792);
+}
+
+/* Each field wrapper */
+.formset p {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+.formset p label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Input styling */
+.formset p input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button container */
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+/* Button styling */
+.button input {
+  padding: 12px 25px;
+  background-color: green;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 20px;
+  
+}
+
+/* Hover effect */
+.button input:hover {
+  background-color: bisque;
+  color: black;
+}
+
+ .contact-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      margin: auto;
+      
+      width: 70%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 26px;
+    }
+
+    .contact-container p {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #555;
+      font-size: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #444;
+      font-weight: 500;
+    }
+
+    input, textarea {
+      width: 80%;
+      margin-left: 40px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #007BFF;
+      outline: none;
+      box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    button {
+      width: 40%;
+      margin-left: 150px;
+      padding: 14px;
+      background: #007BFF;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .contact-container {
+        padding: 25px;
+      }
+      .contact-container h2 {
+        font-size: 22px;
+      }
+    }
+    .contactus{
+      
+    }
