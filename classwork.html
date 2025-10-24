@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tailwind Play CDN Demo</title>
+
+    <!-- Tailwind Play CDN (dev only) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="pt-40"> <!-- Added padding so content is not hidden under fixed header -->
+
+    <!-- Fixed Header -->
+    <header
+        class="fixed top-0 left-0 w-full bg-gradient-to-r from-green-300 via-rose-400 to-gray-200 text-white px-6 py-4 shadow-md z-50">
+        <h1 class="text-white text-center font-bold text-4xl">WebDev Course</h1>
+        <nav>
+            <ul class="flex justify-center gap-8 pt-8">
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="registration.html">Registration</a>
+                </li>
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="products.html">Products</a>
+                </li>
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="py-4">
+        <div class="flex items-center justify-center min-h-screen bg-zine-700 border-2 border-green-500">
+            <div class="bg-zinc-800 p-2 mx-6 rounded-2xl"></div>
+            <div class="flex flex-col md:flex-row">
+                <img src="img.jpg" alt="img" class="object-cover rounded-xl h-50 md:h-64 md:rounded-l-xl md:rounded-r-none
+                transform hover:scale-105 hover:rounded-xl duration-200">
+
+            </div>
+            <div class="p-6 md:p-12">
+                <h2 class="font-serif text-xl leading-5f tracking-wide text-center text-white md:text-2xl ">getdiet and fitness tips in your hand</h2>
+            </div>
+        </div> 
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+        <p class="text-center pt-4">&copy; 2023 Web Development Course. All rights reserved.</p>
+        <nav class="football">
+            <ul class="flex justify-around pt-12">
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="registeration.html">Registration</a>
+                </li>
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="products.html">Products</a>
+                </li>
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <br><br>
+        <p class="text-center pb-4">This website demonstrates HTML5 semantic structure without any CSS styling.</p>
+    </footer>
+
+</body>
+
+</html>

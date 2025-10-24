@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tailwind Play CDN Demo</title>
+
+    <!-- Tailwind Play CDN (dev only) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+
+<body>
+    <header
+        class="fixed top-0 left-0 w-full bg-gradient-to-r from-green-300 via-rose-400 to-gray-200 text-white px-6 py-4 shadow-md z-50">
+        <h1 class="text-white text-center font-bold text-4xl">WebDev Course</h1>
+        <nav>
+            <ul class="flex justify-center gap-8 pt-8">
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="registration.html">Registration</a>
+                </li>
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="products.html">Products</a>
+                </li>
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="min-h-screen flex items-center justify-center px-4 py-12 mt-20">
+        <section class="w-full max-w-3xl bg-white shadow-xl rounded-2xl p-8 border border-gray-100 mt-20">
+            <h2 class="text-3xl font-semibold text-center text-indigo-700 mb-6">User Registration</h2>
+
+            <form action="registration-success.html" method="get" class="space-y-8">
+                <!-- Personal Information -->
+                <fieldset class="border border-gray-200 rounded-lg p-5">
+                    <legend class="text-lg font-semibold text-indigo-600 px-2">Personal Information</legend>
+                    <div class=" gap-4 mt-4">
+                        <div>
+                            <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required
+                                class="mt-1 w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required
+                                class="mt-1 w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="mt-1 w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                            <input type="tel" id="phone" name="phone"
+                                class="mt-1 w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Account Information -->
+                <fieldset class="border border-gray-200 rounded-lg p-5">
+                    <legend class="text-lg font-semibold text-indigo-600 px-2">Account Information</legend>
+                    <div class=" gap-4 mt-4">
+                        <div>
+                            <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                            <input type="text" id="username" name="username" required
+                                class="mt-1 w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                            <input type="password" id="password" name="password" required minlength="8"
+                                class="mt-1 w-full border-gray-500 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm
+                                Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required
+                                class="mt-1 w-full border-gray-500 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Additional Information -->
+                <fieldset class="border border-gray-200 rounded-lg p-5">
+                    <legend class="text-lg font-semibold text-indigo-600 px-2">Additional Information</legend>
+                    <div class=" gap-4 mt-4">
+                        <div>
+                            <label  class="block text-sm font-medium text-gray-700">Birth Date</label>
+                            <input type="date" id="birthdate" name="birthdate"
+                                class="mt-1 w-full border-black rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="course-level" class="block text-sm font-medium text-gray-700">Course
+                                Level</label>
+                            <select id="course-level" name="course-level"
+                                class="mt-1 w-full border-black rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Interests -->
+                    <div class="mt-4">
+                        <span class="block text-sm font-medium text-gray-700 mb-2">Interests</span>
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" id="frontend" name="interests" value="frontend"
+                                    class="text-indigo-600 focus:ring-indigo-500">
+                                <span class="ml-2">Frontend Development</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" id="backend" name="interests" value="backend"
+                                    class="text-indigo-600 focus:ring-indigo-500">
+                                <span class="ml-2">Backend Development</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" id="fullstack" name="interests" value="fullstack"
+                                    class="text-indigo-600 focus:ring-indigo-500">
+                                <span class="ml-2">Full Stack Development</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="mt-4">
+                        <label for="comments" class="block text-sm font-medium text-gray-700">Comments</label>
+                        <textarea id="comments" name="comments" rows="4"
+                            class="mt-1 w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Buttons -->
+                <div class="flex justify-center gap-4">
+                    <input type="submit" value="Register"
+                        class="px-6 py-2 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition">
+                    <input type="reset" value="Clear Form"
+                        class="px-6 py-2 bg-gray-200 text-gray-700 font-semibold rounded-lg hover:bg-gray-300 transition">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+        <p class="text-center pt-4">&copy; 2023 Web Development Course. All rights reserved.</p>
+        <nav class="football">
+            <ul class="flex justify-around pt-12">
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="registeration.html">Registration</a>
+                </li>
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="products.html">Products</a>
+                </li>
+                <li class="hover:border-2 hover:border-white hover:rounded-md hover:bg-blue-500 p-2">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <br><br>
+        <p class="text-center pb-4">This website demonstrates HTML5 semantic structure without any CSS styling.</p>
+    </footer>
+</body>
+
+</html>
